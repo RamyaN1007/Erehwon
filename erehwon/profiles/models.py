@@ -17,7 +17,7 @@ LABEL_OPTIONS = (
 class ErehwonUser(AbstractEmailUser):
 #
 #     # basic information
-      username = models.CharField(max_length=30, blank=True)
+    username = models.CharField(max_length=30, blank=True)
 #     #image (tip:s3DirectField)
 
 def __str__(self):

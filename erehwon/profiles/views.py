@@ -1,16 +1,16 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.http import HttpResponse, HttpResponseForbidden
+from django.http import HttpResponse, HttpResponseForbidden, HttpResponseRedirect
 from django.views.generic import TemplateView
 from django.views.generic.edit import FormView, UpdateView
 from django.contrib.auth import logout
-from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
+from django.core.urlresolvers import reverse
 import logging
 
 from registration.backends.hmac import views as registration_views
 
 from profiles.models import Project, Idea, Message, CallForAction
-from profiles.forms import ProjectForm
+from profiles.forms import ProjectForm, ErehwonUserSignUpForm
 
 log = logging.getLogger("erehwon")
 
@@ -29,13 +29,17 @@ class ProjectFormView(TemplateView):
     The Dashboard view for create/update Projects
     """
 
-    template_name = "profiles/my-projects.html"
+    template_name = "profiles/project.html"
     form_class = ProjectForm
 
-def logout_view(request):
-    logout(request)
+def login(request):
+    return HttpResponseRedirect('accounts/login/')
 
-    return HttpResponseRedirect("/")
+def logout(request):
+    logout()
+    render(request)
+
+    return HttpResponseRedirect('/')
 
 
 @login_required

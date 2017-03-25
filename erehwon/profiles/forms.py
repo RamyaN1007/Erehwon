@@ -1,6 +1,5 @@
 from django import forms
-from profiles.models import Project
-from profiles.models import ErehwonUser
+from profiles.models import ErehwonUser, Project
 
 from registration.forms import RegistrationForm
 
