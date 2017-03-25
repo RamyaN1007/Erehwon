@@ -2,12 +2,10 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse, HttpResponseForbidden, HttpResponseRedirect
 from django.views.generic import TemplateView
 from django.views.generic.edit import FormView, UpdateView
-from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 from django.core.urlresolvers import reverse
 import logging
 
-from registration.backends.hmac import views as registration_views
 
 from profiles.models import Project, Idea, Message, CallForAction
 from profiles.forms import ProjectForm, ErehwonUserSignUpForm
@@ -36,11 +34,8 @@ def login(request):
     return HttpResponseRedirect('accounts/login/')
 
 def logout(request):
-    logout()
-    render(request)
-
+    
     return HttpResponseRedirect('/')
-
 
 @login_required
 def project_list(request):
