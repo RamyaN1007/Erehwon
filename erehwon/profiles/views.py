@@ -31,11 +31,11 @@ class ProjectFormView(TemplateView):
     form_class = ProjectForm
 
 def login(request):
-    return HttpResponseRedirect('accounts/login/')
+    return HttpResponseRedirect('projects')
 
-def logout(request):
-    
-    return HttpResponseRedirect('/')
+# def logout(request):
+#
+#     return HttpResponseRedirect('/')
 
 @login_required
 def project_list(request):

@@ -21,9 +21,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ["SECRET_KEY"]
 
 
-ALLOWED_HOSTS = ['*']
-
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = 'projects'
+LOGOUT_REDIRECT_URL = '/'
 
 
 # Application definition
@@ -37,13 +36,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_countries',
-    'profiles',
     'custom_user',
     'erehwon',
     'messagesApp',
     'postman',
     'ajax_select',
     'notifications',
+    'core',
+    'profiles'
 ]
 
 SITE_ID = 1

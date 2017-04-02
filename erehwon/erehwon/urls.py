@@ -5,7 +5,7 @@ from django.contrib.auth import views as auth_views
 
 from core.views import homepage
 
-from profiles.views import login, logout, CallForActionView, ProjectFormView, project_add, project_list, project_update, idea_list, call_list
+from profiles.views import login, CallForActionView, ProjectFormView, project_add, project_list, project_update, idea_list, call_list
 from profiles.forms import ErehwonUserSignUpForm
 from registration.backends.hmac.views import RegistrationView
 
@@ -21,7 +21,6 @@ urlpatterns = [
     url(r'^accounts/register/$', RegistrationView.as_view(form_class=ErehwonUserSignUpForm), name="registration_register"),
     url(r'^accounts/', include('registration.backends.hmac.urls')),
     url(r'^accounts/login/$', login, name="login"),
-    url(r'^accounts/logout/$', logout, {'next_page': 'homapage'}, name="logout"),
     url(r'^projects/$', project_list, name="project_list"),
     # url(r'^project', ProjectFormView.as_view(), name="project_form"),
     url(r'^ideas/$', idea_list, name="idea_list"),
