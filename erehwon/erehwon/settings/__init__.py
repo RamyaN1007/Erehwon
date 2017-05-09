@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ["SECRET_KEY"]
 
 
-LOGIN_REDIRECT_URL = 'projects'
+LOGIN_REDIRECT_URL = '/projects'
 LOGOUT_REDIRECT_URL = '/'
 
 

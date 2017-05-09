@@ -6887,3 +6887,313 @@ Traceback (most recent call last):
     (bit, current))  # missing attribute
 VariableDoesNotExist: Failed lookup for key [debug] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: u'PI40K4VcmPKnwlKmUwNGSOQjjKmZvQWxL1QCWf3pU7JmFZRAEzLoXTciUpOUIjA6'>, 'user': <SimpleLazyObject: <function <lambda> at 0x101a54cf8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x101a69e90>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x101a52bd0>, u'request': <WSGIRequest: POST '/accounts/login/'>}, {}, {'site_name': u'127.0.0.1:8000', 'site': <Site: 127.0.0.1:8000>, 'form': <AuthenticationForm bound=True, valid=False, fields=(username;password)>, 'next': ''}]"
 "POST /accounts/login/ HTTP/1.1" 200 11449
+(0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) SELECT "django_site"."id", "django_site"."domain", "django_site"."name" FROM "django_site" WHERE "django_site"."id" = 1; args=(1,)
+Exception while resolving variable 'email' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [email] in u'<tr><th><label for="id_username">Email address:</label></th><td><ul class="errorlist"><li>This field is required.</li></ul><input autofocus="" id="id_username" maxlength="254" name="username" type="text" required /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input id="id_password" name="password" type="password" required /></td></tr>'
+Exception while resolving variable 'debug' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [debug] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: u'gjpyTOlQp2yLdcV6RIzOlKKRUvKNzeupcCba5Zt3XkxKmQ2kBLxwqP6QvacIMH8Y'>, 'user': <SimpleLazyObject: <function <lambda> at 0x1076631b8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10769ab90>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10766e3d0>, u'request': <WSGIRequest: POST '/accounts/login/'>}, {}, {'site_name': u'127.0.0.1:8000', 'site': <Site: 127.0.0.1:8000>, 'form': <AuthenticationForm bound=True, valid=False, fields=(username;password)>, 'next': ''}]"
+"POST /accounts/login/ HTTP/1.1" 200 11449
+"GET /static/styles/styles.css HTTP/1.1" 304 0
+"GET /static/scripts/erehwon.min.js HTTP/1.1" 304 0
+"GET /static/img/twitter_tiny.svg HTTP/1.1" 304 0
+"GET /static/img/github_tiny.svg HTTP/1.1" 304 0
+(0.007) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.005) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) SELECT "django_site"."id", "django_site"."domain", "django_site"."name" FROM "django_site" WHERE "django_site"."id" = 1; args=(1,)
+Exception while resolving variable 'email' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [email] in u'<tr><th><label for="id_username">Email address:</label></th><td><ul class="errorlist"><li>This field is required.</li></ul><input autofocus="" id="id_username" maxlength="254" name="username" type="text" required /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input id="id_password" name="password" type="password" required /></td></tr>'
+Exception while resolving variable 'debug' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [debug] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: u'Br0axfonKxLifaVEyi3htVdFBUcucEbvxKMMJqwAiPKhoO2Sil1Zy0zEczEpp7P4'>, 'user': <SimpleLazyObject: <function <lambda> at 0x10ecce1b8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10ed05b90>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10ecd93d0>, u'request': <WSGIRequest: POST '/accounts/login/'>}, {}, {'site_name': u'127.0.0.1:8000', 'site': <Site: 127.0.0.1:8000>, 'form': <AuthenticationForm bound=True, valid=False, fields=(username;password)>, 'next': ''}]"
+"POST /accounts/login/ HTTP/1.1" 200 11449
+Exception while resolving variable 'email' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [email] in u'<tr><th><label for="id_username">Email address:</label></th><td><ul class="errorlist"><li>This field is required.</li></ul><input autofocus="" id="id_username" maxlength="254" name="username" type="text" required /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input id="id_password" name="password" type="password" required /></td></tr>'
+Exception while resolving variable 'debug' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [debug] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: u'iEJ33u2ZI0mcnmbbWeoWoysVbgauUUoQeXvFfFacgilbw0ipGhmEtDOUMVCp7n2p'>, 'user': <SimpleLazyObject: <function <lambda> at 0x10ecfbcf8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10ed108d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10ecf85d0>, u'request': <WSGIRequest: POST '/accounts/login/'>}, {}, {'site_name': u'127.0.0.1:8000', 'site': <Site: 127.0.0.1:8000>, 'form': <AuthenticationForm bound=True, valid=False, fields=(username;password)>, 'next': ''}]"
+"POST /accounts/login/ HTTP/1.1" 200 11449
+Exception while resolving variable 'email' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [email] in u'<tr><th><label for="id_username">Email address:</label></th><td><ul class="errorlist"><li>This field is required.</li></ul><input autofocus="" id="id_username" maxlength="254" name="username" type="text" required /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input id="id_password" name="password" type="password" required /></td></tr>'
+Exception while resolving variable 'debug' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [debug] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: u'QUiaMwJ6phGKi1ljKs6H4xIk9FkNbkSmMd4MYHRjXzFJrFsxuv4p9C4jKkMIoNwV'>, 'user': <SimpleLazyObject: <function <lambda> at 0x10ecfbb18>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10ed10b50>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10ecf8910>, u'request': <WSGIRequest: POST '/accounts/login/'>}, {}, {'site_name': u'127.0.0.1:8000', 'site': <Site: 127.0.0.1:8000>, 'form': <AuthenticationForm bound=True, valid=False, fields=(username;password)>, 'next': ''}]"
+"POST /accounts/login/ HTTP/1.1" 200 11449
+"GET /admin/ HTTP/1.1" 302 0
+Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x10ed36cf8>>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x10ed10f50>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10ed10ed0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10ed100d0>, u'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>}, {}, {'username': u'', 'app_path': u'/admin/login/?next=/admin/', 'available_apps': [], 'site_name': u'127.0.0.1:8000', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'title': u'Log in', 'site_header': <django.utils.functional.__proxy__ object at 0x10e502b50>, 'site': <Site: 127.0.0.1:8000>, 'next': u'/admin/', 'site_title': <django.utils.functional.__proxy__ object at 0x10e5023d0>, u'LANGUAGE_CODE': 'en-us', 'has_permission': False, 'site_url': '/', u'LANGUAGE_BIDI': False}]"
+Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x10ed36cf8>>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x10ed10f50>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10ed10ed0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10ed100d0>, u'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>}, {}, {'username': u'', 'app_path': u'/admin/login/?next=/admin/', 'available_apps': [], 'site_name': u'127.0.0.1:8000', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'title': u'Log in', 'site_header': <django.utils.functional.__proxy__ object at 0x10e502b50>, 'site': <Site: 127.0.0.1:8000>, 'next': u'/admin/', 'site_title': <django.utils.functional.__proxy__ object at 0x10e5023d0>, u'LANGUAGE_CODE': 'en-us', 'has_permission': False, 'site_url': '/', u'LANGUAGE_BIDI': False}]"
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 1658
+(0.003) SELECT "profiles_erehwonuser"."id", "profiles_erehwonuser"."password", "profiles_erehwonuser"."last_login", "profiles_erehwonuser"."is_superuser", "profiles_erehwonuser"."email", "profiles_erehwonuser"."is_staff", "profiles_erehwonuser"."is_active", "profiles_erehwonuser"."date_joined", "profiles_erehwonuser"."username" FROM "profiles_erehwonuser" WHERE "profiles_erehwonuser"."email" = 'master@master.com'; args=(u'master@master.com',)
+(0.001) UPDATE "profiles_erehwonuser" SET "password" = 'pbkdf2_sha256$30000$789ozhBQGGWy$lEySZk0+YIp81QIi0pj1OV7LqDURuN78AyWbPS58qIQ=' WHERE "profiles_erehwonuser"."id" = 5; args=(u'pbkdf2_sha256$30000$789ozhBQGGWy$lEySZk0+YIp81QIi0pj1OV7LqDURuN78AyWbPS58qIQ=', 5)
+(0.001) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = '95mobwepy2vmgn5ab0leul3jvzyxcw8z' LIMIT 1; args=(u'95mobwepy2vmgn5ab0leul3jvzyxcw8z',)
+(0.002) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") VALUES ('95mobwepy2vmgn5ab0leul3jvzyxcw8z', 'NDQxMzI0NWVlMmE4MjZlMTIwMzM1MzA4NTgxMWMyZDNiZWVmOTNiNDp7fQ==', '2017-04-16T10:10:25.256588+00:00'::timestamptz); args=(u'95mobwepy2vmgn5ab0leul3jvzyxcw8z', u'NDQxMzI0NWVlMmE4MjZlMTIwMzM1MzA4NTgxMWMyZDNiZWVmOTNiNDp7fQ==', datetime.datetime(2017, 4, 16, 10, 10, 25, 256588, tzinfo=<UTC>))
+(0.001) UPDATE "profiles_erehwonuser" SET "last_login" = '2017-04-02T10:10:25.260538+00:00'::timestamptz WHERE "profiles_erehwonuser"."id" = 5; args=(datetime.datetime(2017, 4, 2, 10, 10, 25, 260538, tzinfo=<UTC>), 5)
+(0.001) UPDATE "django_session" SET "session_data" = 'ZTg1OTUxMzQ5NTczZjU1NGZkNzQ2ZTllMjhlYjI1N2M3NzhmNGE5YTp7Il9hdXRoX3VzZXJfaGFzaCI6IjhiNTQ4OTg0MzcxMzZkM2RhMmIyZmY0OWZjMWQ0ZDJjYTc4NGU5Y2QiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiI1In0=', "expire_date" = '2017-04-16T10:10:25.262926+00:00'::timestamptz WHERE "django_session"."session_key" = '95mobwepy2vmgn5ab0leul3jvzyxcw8z'; args=(u'ZTg1OTUxMzQ5NTczZjU1NGZkNzQ2ZTllMjhlYjI1N2M3NzhmNGE5YTp7Il9hdXRoX3VzZXJfaGFzaCI6IjhiNTQ4OTg0MzcxMzZkM2RhMmIyZmY0OWZjMWQ0ZDJjYTc4NGU5Y2QiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiI1In0=', datetime.datetime(2017, 4, 16, 10, 10, 25, 262926, tzinfo=<UTC>), u'95mobwepy2vmgn5ab0leul3jvzyxcw8z')
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '95mobwepy2vmgn5ab0leul3jvzyxcw8z' AND "django_session"."expire_date" > '2017-04-02T10:10:25.456310+00:00'::timestamptz); args=('95mobwepy2vmgn5ab0leul3jvzyxcw8z', datetime.datetime(2017, 4, 2, 10, 10, 25, 456310, tzinfo=<UTC>))
+(0.001) SELECT "profiles_erehwonuser"."id", "profiles_erehwonuser"."password", "profiles_erehwonuser"."last_login", "profiles_erehwonuser"."is_superuser", "profiles_erehwonuser"."email", "profiles_erehwonuser"."is_staff", "profiles_erehwonuser"."is_active", "profiles_erehwonuser"."date_joined", "profiles_erehwonuser"."username" FROM "profiles_erehwonuser" WHERE "profiles_erehwonuser"."id" = 5; args=(5,)
+Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x10ed36b18>>, 'user': <SimpleLazyObject: <ErehwonUser: master@master.com>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10ed90b50>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10ed10710>, u'request': <WSGIRequest: GET '/admin/'>}, {}, {'site_header': <django.utils.functional.__proxy__ object at 0x10e502b50>, 'available_apps': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x10ed90790>, 'add_url': u'/admin/auth/group/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x10e4802d0>, 'app_label': 'auth'}, {'app_url': u'/admin/notifications/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/notifications/notification/', 'object_name': 'Notification', 'name': <django.utils.functional.__proxy__ object at 0x10ed905d0>, 'add_url': u'/admin/notifications/notification/add/'}], 'has_module_perms': True, 'name': 'Notifications', 'app_label': 'notifications'}, {'app_url': u'/admin/postman/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/postman/message/', 'object_name': 'Message', 'name': <django.utils.functional.__proxy__ object at 0x10ed90250>, 'add_url': u'/admin/postman/message/add/'}, {'perms': {u'add': False, u'change': True, u'delete': False}, 'admin_url': u'/admin/postman/pendingmessage/', 'object_name': 'PendingMessage', 'name': <django.utils.functional.__proxy__ object at 0x10ed906d0>}], 'has_module_perms': True, 'name': 'Postman', 'app_label': 'postman'}, {'app_url': u'/admin/profiles/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/profiles/callforaction/', 'object_name': 'CallForAction', 'name': <django.utils.functional.__proxy__ object at 0x10ed907d0>, 'add_url': u'/admin/profiles/callforaction/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/profiles/idea/', 'object_name': 'Idea', 'name': <django.utils.functional.__proxy__ object at 0x10ed90810>, 'add_url': u'/admin/profiles/idea/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/profiles/message/', 'object_name': 'Message', 'name': <django.utils.functional.__proxy__ object at 0x10ed90950>, 'add_url': u'/admin/profiles/message/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/profiles/project/', 'object_name': 'Project', 'name': <django.utils.functional.__proxy__ object at 0x10ed908d0>, 'add_url': u'/admin/profiles/project/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/profiles/erehwonuser/', 'object_name': 'ErehwonUser', 'name': <django.utils.functional.__proxy__ object at 0x10ed90610>, 'add_url': u'/admin/profiles/erehwonuser/add/'}], 'has_module_perms': True, 'name': 'Profiles', 'app_label': 'profiles'}, {'app_url': u'/admin/sites/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/sites/site/', 'object_name': 'Site', 'name': <django.utils.functional.__proxy__ object at 0x10ed90890>, 'add_url': u'/admin/sites/site/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x10e470490>, 'app_label': 'sites'}], 'site_title': <django.utils.functional.__proxy__ object at 0x10e5023d0>, 'title': <django.utils.functional.__proxy__ object at 0x10e50d650>, 'has_permission': True, 'app_list': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x10ed90190>, 'add_url': u'/admin/auth/group/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x10e4802d0>, 'app_label': 'auth'}, {'app_url': u'/admin/notifications/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/notifications/notification/', 'object_name': 'Notification', 'name': <django.utils.functional.__proxy__ object at 0x10edf9b50>, 'add_url': u'/admin/notifications/notification/add/'}], 'has_module_perms': True, 'name': 'Notifications', 'app_label': 'notifications'}, {'app_url': u'/admin/postman/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/postman/message/', 'object_name': 'Message', 'name': <django.utils.functional.__proxy__ object at 0x10ed10590>, 'add_url': u'/admin/postman/message/add/'}, {'perms': {u'add': False, u'change': True, u'delete': False}, 'admin_url': u'/admin/postman/pendingmessage/', 'object_name': 'PendingMessage', 'name': <django.utils.functional.__proxy__ object at 0x10ed90390>}], 'has_module_perms': True, 'name': 'Postman', 'app_label': 'postman'}, {'app_url': u'/admin/profiles/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/profiles/callforaction/', 'object_name': 'CallForAction', 'name': <django.utils.functional.__proxy__ object at 0x10ed104d0>, 'add_url': u'/admin/profiles/callforaction/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/profiles/idea/', 'object_name': 'Idea', 'name': <django.utils.functional.__proxy__ object at 0x10ed90350>, 'add_url': u'/admin/profiles/idea/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/profiles/message/', 'object_name': 'Message', 'name': <django.utils.functional.__proxy__ object at 0x10ed90410>, 'add_url': u'/admin/profiles/message/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/profiles/project/', 'object_name': 'Project', 'name': <django.utils.functional.__proxy__ object at 0x10ed90490>, 'add_url': u'/admin/profiles/project/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/profiles/erehwonuser/', 'object_name': 'ErehwonUser', 'name': <django.utils.functional.__proxy__ object at 0x10ed10550>, 'add_url': u'/admin/profiles/erehwonuser/add/'}], 'has_module_perms': True, 'name': 'Profiles', 'app_label': 'profiles'}, {'app_url': u'/admin/sites/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/sites/site/', 'object_name': 'Site', 'name': <django.utils.functional.__proxy__ object at 0x10ed900d0>, 'add_url': u'/admin/sites/site/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x10e470490>, 'app_label': 'sites'}], u'LANGUAGE_CODE': 'en-us', u'LANGUAGE_BIDI': False, 'site_url': '/'}]"
+Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x10ed36b18>>, 'user': <SimpleLazyObject: <ErehwonUser: master@master.com>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10ed90b50>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10ed10710>, u'request': <WSGIRequest: GET '/admin/'>}, {}, {'site_header': <django.utils.functional.__proxy__ object at 0x10e502b50>, 'available_apps': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x10ed90790>, 'add_url': u'/admin/auth/group/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x10e4802d0>, 'app_label': 'auth'}, {'app_url': u'/admin/notifications/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/notifications/notification/', 'object_name': 'Notification', 'name': <django.utils.functional.__proxy__ object at 0x10ed905d0>, 'add_url': u'/admin/notifications/notification/add/'}], 'has_module_perms': True, 'name': 'Notifications', 'app_label': 'notifications'}, {'app_url': u'/admin/postman/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/postman/message/', 'object_name': 'Message', 'name': <django.utils.functional.__proxy__ object at 0x10ed90250>, 'add_url': u'/admin/postman/message/add/'}, {'perms': {u'add': False, u'change': True, u'delete': False}, 'admin_url': u'/admin/postman/pendingmessage/', 'object_name': 'PendingMessage', 'name': <django.utils.functional.__proxy__ object at 0x10ed906d0>}], 'has_module_perms': True, 'name': 'Postman', 'app_label': 'postman'}, {'app_url': u'/admin/profiles/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/profiles/callforaction/', 'object_name': 'CallForAction', 'name': <django.utils.functional.__proxy__ object at 0x10ed907d0>, 'add_url': u'/admin/profiles/callforaction/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/profiles/idea/', 'object_name': 'Idea', 'name': <django.utils.functional.__proxy__ object at 0x10ed90810>, 'add_url': u'/admin/profiles/idea/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/profiles/message/', 'object_name': 'Message', 'name': <django.utils.functional.__proxy__ object at 0x10ed90950>, 'add_url': u'/admin/profiles/message/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/profiles/project/', 'object_name': 'Project', 'name': <django.utils.functional.__proxy__ object at 0x10ed908d0>, 'add_url': u'/admin/profiles/project/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/profiles/erehwonuser/', 'object_name': 'ErehwonUser', 'name': <django.utils.functional.__proxy__ object at 0x10ed90610>, 'add_url': u'/admin/profiles/erehwonuser/add/'}], 'has_module_perms': True, 'name': 'Profiles', 'app_label': 'profiles'}, {'app_url': u'/admin/sites/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/sites/site/', 'object_name': 'Site', 'name': <django.utils.functional.__proxy__ object at 0x10ed90890>, 'add_url': u'/admin/sites/site/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x10e470490>, 'app_label': 'sites'}], 'site_title': <django.utils.functional.__proxy__ object at 0x10e5023d0>, 'title': <django.utils.functional.__proxy__ object at 0x10e50d650>, 'has_permission': True, 'app_list': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x10ed90190>, 'add_url': u'/admin/auth/group/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x10e4802d0>, 'app_label': 'auth'}, {'app_url': u'/admin/notifications/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/notifications/notification/', 'object_name': 'Notification', 'name': <django.utils.functional.__proxy__ object at 0x10edf9b50>, 'add_url': u'/admin/notifications/notification/add/'}], 'has_module_perms': True, 'name': 'Notifications', 'app_label': 'notifications'}, {'app_url': u'/admin/postman/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/postman/message/', 'object_name': 'Message', 'name': <django.utils.functional.__proxy__ object at 0x10ed10590>, 'add_url': u'/admin/postman/message/add/'}, {'perms': {u'add': False, u'change': True, u'delete': False}, 'admin_url': u'/admin/postman/pendingmessage/', 'object_name': 'PendingMessage', 'name': <django.utils.functional.__proxy__ object at 0x10ed90390>}], 'has_module_perms': True, 'name': 'Postman', 'app_label': 'postman'}, {'app_url': u'/admin/profiles/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/profiles/callforaction/', 'object_name': 'CallForAction', 'name': <django.utils.functional.__proxy__ object at 0x10ed104d0>, 'add_url': u'/admin/profiles/callforaction/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/profiles/idea/', 'object_name': 'Idea', 'name': <django.utils.functional.__proxy__ object at 0x10ed90350>, 'add_url': u'/admin/profiles/idea/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/profiles/message/', 'object_name': 'Message', 'name': <django.utils.functional.__proxy__ object at 0x10ed90410>, 'add_url': u'/admin/profiles/message/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/profiles/project/', 'object_name': 'Project', 'name': <django.utils.functional.__proxy__ object at 0x10ed90490>, 'add_url': u'/admin/profiles/project/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/profiles/erehwonuser/', 'object_name': 'ErehwonUser', 'name': <django.utils.functional.__proxy__ object at 0x10ed10550>, 'add_url': u'/admin/profiles/erehwonuser/add/'}], 'has_module_perms': True, 'name': 'Profiles', 'app_label': 'profiles'}, {'app_url': u'/admin/sites/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/sites/site/', 'object_name': 'Site', 'name': <django.utils.functional.__proxy__ object at 0x10ed900d0>, 'add_url': u'/admin/sites/site/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x10e470490>, 'app_label': 'sites'}], u'LANGUAGE_CODE': 'en-us', u'LANGUAGE_BIDI': False, 'site_url': '/'}]"
+Exception while resolving variable 'add_url' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [add_url] in u"{'perms': {u'add': False, u'change': True, u'delete': False}, 'admin_url': u'/admin/postman/pendingmessage/', 'object_name': 'PendingMessage', 'name': <django.utils.functional.__proxy__ object at 0x10ed90390>}"
+(0.003) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "profiles_erehwonuser"."id", "profiles_erehwonuser"."password", "profiles_erehwonuser"."last_login", "profiles_erehwonuser"."is_superuser", "profiles_erehwonuser"."email", "profiles_erehwonuser"."is_staff", "profiles_erehwonuser"."is_active", "profiles_erehwonuser"."date_joined", "profiles_erehwonuser"."username", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "profiles_erehwonuser" ON ("django_admin_log"."user_id" = "profiles_erehwonuser"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 5 ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(5,)
+"GET /admin/ HTTP/1.1" 200 9620
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'registration.backends.hmac.urls' from '/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/registration/backends/hmac/urls.pyc'> (None:None) ^accounts/>"
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'postman.urls' from '/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/postman/urls.pyc'> (postman:postman) ^messages/>"
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u"<RegexURLResolver <module 'notifications.urls' from '/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/notifications/urls.pyc'> (notifications:notifications) ^inbox/notifications/>"
+"GET /accounts HTTP/1.1" 404 3758
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '95mobwepy2vmgn5ab0leul3jvzyxcw8z' AND "django_session"."expire_date" > '2017-04-02T10:10:34.794873+00:00'::timestamptz); args=('95mobwepy2vmgn5ab0leul3jvzyxcw8z', datetime.datetime(2017, 4, 2, 10, 10, 34, 794873, tzinfo=<UTC>))
+(0.002) SELECT "profiles_erehwonuser"."id", "profiles_erehwonuser"."password", "profiles_erehwonuser"."last_login", "profiles_erehwonuser"."is_superuser", "profiles_erehwonuser"."email", "profiles_erehwonuser"."is_staff", "profiles_erehwonuser"."is_active", "profiles_erehwonuser"."date_joined", "profiles_erehwonuser"."username" FROM "profiles_erehwonuser" WHERE "profiles_erehwonuser"."id" = 5; args=(5,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = '95mobwepy2vmgn5ab0leul3jvzyxcw8z'; args=('95mobwepy2vmgn5ab0leul3jvzyxcw8z',)
+(0.001) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('95mobwepy2vmgn5ab0leul3jvzyxcw8z'); args=(u'95mobwepy2vmgn5ab0leul3jvzyxcw8z',)
+"GET /accounts/logout/ HTTP/1.1" 302 0
+Exception while resolving variable 'debug' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [debug] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x10ee0aed8>>, 'user': <SimpleLazyObject: <function <lambda> at 0x10ee0ad70>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10edeca10>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10ec4f810>, u'request': <WSGIRequest: GET '/'>}, {}]"
+"GET / HTTP/1.1" 200 11846
+"GET /admin/ HTTP/1.1" 302 0
+Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x10e015b90>>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x10edf9950>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10ecf8890>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10ecf8790>, u'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>}, {}, {'username': u'', 'app_path': u'/admin/login/?next=/admin/', 'available_apps': [], 'site_name': u'127.0.0.1:8000', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'title': u'Log in', 'site_header': <django.utils.functional.__proxy__ object at 0x10e502b50>, 'site': <Site: 127.0.0.1:8000>, 'next': u'/admin/', 'site_title': <django.utils.functional.__proxy__ object at 0x10e5023d0>, u'LANGUAGE_CODE': 'en-us', 'has_permission': False, 'site_url': '/', u'LANGUAGE_BIDI': False}]"
+Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x10e015b90>>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x10edf9950>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10ecf8890>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10ecf8790>, u'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>}, {}, {'username': u'', 'app_path': u'/admin/login/?next=/admin/', 'available_apps': [], 'site_name': u'127.0.0.1:8000', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'title': u'Log in', 'site_header': <django.utils.functional.__proxy__ object at 0x10e502b50>, 'site': <Site: 127.0.0.1:8000>, 'next': u'/admin/', 'site_title': <django.utils.functional.__proxy__ object at 0x10e5023d0>, u'LANGUAGE_CODE': 'en-us', 'has_permission': False, 'site_url': '/', u'LANGUAGE_BIDI': False}]"
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 1658
+(0.009) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.005) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.008) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+Exception while resolving variable 'debug' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [debug] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x1117ba9b0>>, 'user': <SimpleLazyObject: <function <lambda> at 0x1117a61b8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1117bffd0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1117b2350>, u'request': <WSGIRequest: GET '/'>}, {}]"
+"GET / HTTP/1.1" 200 11846
+"GET /static/styles/styles.css HTTP/1.1" 304 0
+(0.002) SELECT "django_site"."id", "django_site"."domain", "django_site"."name" FROM "django_site" WHERE "django_site"."id" = 1; args=(1,)
+Exception while resolving variable 'email' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [email] in u'<tr><th><label for="id_username">Email address:</label></th><td><input autofocus="" id="id_username" maxlength="254" name="username" type="text" required /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input id="id_password" name="password" type="password" required /></td></tr>'
+Exception while resolving variable 'debug' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [debug] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: u'vflZQFif9nTunXMsQpSD7xvq05j2D1GZuq0yZko2R8zMJd5QJzpi1yIuy8Nfdbf6'>, 'user': <SimpleLazyObject: <function <lambda> at 0x1117f3938>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1117d7790>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1117bf0d0>, u'request': <WSGIRequest: GET '/accounts/login/'>}, {}, {'site_name': u'127.0.0.1:8000', 'site': <Site: 127.0.0.1:8000>, 'form': <AuthenticationForm bound=False, valid=False, fields=(username;password)>, 'next': ''}]"
+"GET /accounts/login/ HTTP/1.1" 200 11449
+Exception while resolving variable 'email' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [email] in u'<tr><th><label for="id_username">Email address:</label></th><td><ul class="errorlist"><li>This field is required.</li></ul><input autofocus="" id="id_username" maxlength="254" name="username" type="text" required /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input id="id_password" name="password" type="password" required /></td></tr>'
+Exception while resolving variable 'debug' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [debug] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: u'5rUT1uAxXguqauIQNaM1QaotEzwVUgAJ4Czsa9GkF1aIwK1eGkjGKbBxcC08uq9Q'>, 'user': <SimpleLazyObject: <function <lambda> at 0x1117f3c08>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1117f6250>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1117cef50>, u'request': <WSGIRequest: POST '/accounts/login/'>}, {}, {'site_name': u'127.0.0.1:8000', 'site': <Site: 127.0.0.1:8000>, 'form': <AuthenticationForm bound=True, valid=False, fields=(username;password)>, 'next': ''}]"
+"POST /accounts/login/ HTTP/1.1" 200 11449
+Exception while resolving variable 'email' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [email] in u'<tr><th><label for="id_username">Email address:</label></th><td><input autofocus="" id="id_username" maxlength="254" name="username" type="text" required /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input id="id_password" name="password" type="password" required /></td></tr>'
+Exception while resolving variable 'debug' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [debug] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: u'LAj3uqZVB0onybEx4pHNcq6N86vDqZezaXEExSUSkGcI5hBwi8TMNpgHvZNbS2nG'>, 'user': <SimpleLazyObject: <function <lambda> at 0x1117f3d70>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x111816390>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1117d7090>, u'request': <WSGIRequest: GET '/accounts/login/'>}, {}, {'site_name': u'127.0.0.1:8000', 'site': <Site: 127.0.0.1:8000>, 'form': <AuthenticationForm bound=False, valid=False, fields=(username;password)>, 'next': ''}]"
+"GET /accounts/login/ HTTP/1.1" 200 11449
+"GET /static/scripts/erehwon.min.js HTTP/1.1" 200 554
+"GET /static/styles/styles.css HTTP/1.1" 200 18933
+"GET /static/img/github_tiny.svg HTTP/1.1" 200 1923
+"GET /static/img/twitter_tiny.svg HTTP/1.1" 200 826
+(0.008) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.005) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) SELECT "django_site"."id", "django_site"."domain", "django_site"."name" FROM "django_site" WHERE "django_site"."id" = 1; args=(1,)
+Exception while resolving variable 'email' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [email] in u'<tr><th><label for="id_username">Email address:</label></th><td><ul class="errorlist"><li>This field is required.</li></ul><input autofocus="" id="id_username" maxlength="254" name="username" type="text" required /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input id="id_password" name="password" type="password" required /></td></tr>'
+Exception while resolving variable 'debug' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [debug] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: u'WBQtWKXJRyXpgSXH3In2EuSrR5Go2XbrVMv25p3wzjDHC8g5WSUHyv5vp8aBC7Ky'>, 'user': <SimpleLazyObject: <function <lambda> at 0x105dc51b8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x105dfdb10>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x105dd0350>, u'request': <WSGIRequest: POST '/accounts/login/'>}, {}, {'site_name': u'127.0.0.1:8000', 'site': <Site: 127.0.0.1:8000>, 'form': <AuthenticationForm bound=True, valid=False, fields=(username;password)>, 'next': ''}]"
+"POST /accounts/login/ HTTP/1.1" 200 11449
+"GET /static/styles/styles.css HTTP/1.1" 304 0
+(0.034) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /accounts/logout/ HTTP/1.1" 302 0
+Exception while resolving variable 'debug' in template 'index.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [debug] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x10b7b5c08>>, 'user': <SimpleLazyObject: <function <lambda> at 0x10b763a28>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10b7bfc10>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10b7b30d0>, u'request': <WSGIRequest: GET '/'>}, {}]"
+"GET / HTTP/1.1" 200 11846
+"GET /static/styles/styles.css HTTP/1.1" 304 0
+(0.004) SELECT "django_site"."id", "django_site"."domain", "django_site"."name" FROM "django_site" WHERE "django_site"."id" = 1; args=(1,)
+Exception while resolving variable 'email' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [email] in u'<tr><th><label for="id_username">Email address:</label></th><td><input autofocus="" id="id_username" maxlength="254" name="username" type="text" required /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input id="id_password" name="password" type="password" required /></td></tr>'
+Exception while resolving variable 'debug' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [debug] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: u'LnSwKW8jk0lgaRJ0N8rHcfBv9KxSQaiCKyx5TBe62L1yw72oGiYm6gOzHN15qkRJ'>, 'user': <SimpleLazyObject: <function <lambda> at 0x10b7b5c08>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10b7bfd10>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10b7b3d90>, u'request': <WSGIRequest: GET '/accounts/login/'>}, {}, {'site_name': u'127.0.0.1:8000', 'site': <Site: 127.0.0.1:8000>, 'form': <AuthenticationForm bound=False, valid=False, fields=(username;password)>, 'next': ''}]"
+"GET /accounts/login/ HTTP/1.1" 200 11449
+(0.007) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.005) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) SELECT "django_site"."id", "django_site"."domain", "django_site"."name" FROM "django_site" WHERE "django_site"."id" = 1; args=(1,)
+Exception while resolving variable 'email' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [email] in u'<tr><th><label for="id_username">Email address:</label></th><td><ul class="errorlist"><li>This field is required.</li></ul><input autofocus="" id="id_username" maxlength="254" name="username" type="text" required /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input id="id_password" name="password" type="password" required /></td></tr>'
+Exception while resolving variable 'debug' in template 'registration/login.html'.
+Traceback (most recent call last):
+  File "/Users/mariza/.virtualenvs/erehwon/lib/python2.7/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [debug] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: u'ifc6f1YFTI4BneObSv0POEhHc3AFlQezhqRFoG4sBtKTJu7zLFxuIFuLK64SV0NG'>, 'user': <SimpleLazyObject: <function <lambda> at 0x1056a31b8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x1056d9b10>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x1056ae350>, u'request': <WSGIRequest: POST '/accounts/login/'>}, {}, {'site_name': u'127.0.0.1:8000', 'site': <Site: 127.0.0.1:8000>, 'form': <AuthenticationForm bound=True, valid=False, fields=(username;password)>, 'next': ''}]"
+"POST /accounts/login/ HTTP/1.1" 200 11449

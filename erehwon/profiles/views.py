@@ -43,7 +43,7 @@ def project_list(request):
 	projects = Project.objects.filter(user=request.user)
 	context = {'projects': projects}
 
-	return render(request, 'profiles/my-projects.html', context)
+	return render(request, 'dashboard-layout.html', context)
 
 
 @login_required
